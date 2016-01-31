@@ -1,0 +1,35 @@
+.code-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	&__element {
+		margin-right: 30px;
+		background-color: @code-bg;
+		padding: @code-padding;
+		color: @code-text-color;
+		border-radius: @code-border-radius;
+		box-shadow: @code-shadow;
+		transition: box-shadow .25s;
+		@media (min-width: @bp-lg) {
+			min-width: 260px;
+		}
+		&:hover {
+			box-shadow: @code-shadow--hover;
+		}
+		&--param {
+			color: @code-param-color;
+		}
+		&--value {
+			color: @code-link-color;
+			width: 35px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			&:hover {
+				color: @code-link-color--hover;
+				text-decoration: none;
+			}
+		}
+	}
+}
