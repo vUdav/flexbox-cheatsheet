@@ -1,0 +1,25 @@
+.copy-notify {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	border-radius: @border-radius;
+	border: 3px solid;
+	padding: @primary-padding - 10;
+	opacity: 0;
+	&--success {
+		background-color: @success-color;
+		border-color: darken(@success-color, 20%);
+		color: darken(@success-color, 40%);
+		animation-name:'notifyshow';
+		animation-duration: 3s;
+	}
+}
+
+@keyframes notifyshow {
+	0%, 100% {
+		opacity: 0;
+	}
+	10%, 90% {
+		opacity: 1;
+	}
+}
