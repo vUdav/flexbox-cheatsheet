@@ -1,9 +1,16 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
 body {
 	font-family: @font-family;
 	font-size: @font-size;
 	line-height: @line-height;
 	background-color: @body-bg;
 	color: @text-color;
+	padding: @body-padding;
+	max-width: @body-width;
+	width: 100%;
+	margin: 0 auto;
 	a {
 		color: @link-color;
 		text-decoration: none;
