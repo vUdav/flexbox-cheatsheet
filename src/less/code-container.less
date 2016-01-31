@@ -17,6 +17,11 @@
 		&:hover {
 			box-shadow: @code-shadow--hover;
 		}
+		&--pulse {
+			animation-name:'codepulse';
+			animation-duration: 1s;
+			animation-iteration-count: 2;
+		}
 		&--param {
 			color: @code-param-color;
 		}
@@ -31,5 +36,14 @@
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+@keyframes codepulse {
+	0%, 100% {
+		background-color: @code-bg;
+	}
+	50% {
+		background-color: lighten(@code-bg, 15%);
 	}
 }
