@@ -13,6 +13,8 @@
 @code-param-color: #79ABFF;
 @code-link-color: @code-text-color;
 @code-link-color--hover: darken(@code-link-color, 20%);
+@flex-container-color: @body-bg;
+@flex-container-color--hover: darken(@flex-container-color, 3%);
 
 
 
@@ -27,7 +29,7 @@
 @font-size:                   14px;
 
 @font-size--h1:               @font-size * 5;
-@font-size--h2:               @font-size * 1.6;
+@font-size--h2:               @font-size * 2;
 
 @line-height:                 1.4em;
 
@@ -35,8 +37,8 @@
 //  Paddings
 //------------------------------------------------------------------------------
 
-@body-padding: 0 15px;
-@code-padding: 15px;
+@primary-padding: 15px;
+@code-padding: @primary-padding;
 
 //------------------------------------------------------------------------------
 //  Border radius
