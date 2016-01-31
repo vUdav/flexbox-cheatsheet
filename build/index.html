@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quick-guide about FlexBox</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	<div class="copy-notify" id="copy-notify"></div>
+
+	<header class="page-header">
+		<h1 class="page-header__title">FlexBox Guide</h1>
+		<address class="page-header__author">this project on <a href="https://github.com/vUdav/flexbox-guide" target="_blank">GitHub</a> by <a href="http://vudav.ru" rel="author" target="_blank">Valery Liubimov</a></address>
+		<p class="page-header__description">First value is default for this property. <strong>Click</strong> on properties <strong>value</strong> to <strong>copy</strong> to clipboard.</p>
+	</header>
+
+	<section class="flexbox-container">
+		<div class="flexbox-container__inner">
+			<h2 class="flexbox-container__title">Parent Flex-container</h2>
+				<div class="code-container">
+<pre class="code-container__element">
+<span class="code-container__element-param">display:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="display: flex;">flex</a>
+         <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="display: inline-flex;">inline-flex</a>
+</pre>
+
+<pre class="code-container__element" id="flex-direction">
+<span class="code-container__element-param">flex-direction:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-direction: row;">row</a>
+                <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-direction: row-reverse;">row-reverse</a>
+                <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-direction: column;">column</a>
+                <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-direction: column-reverse;">column-reverse</a>
+</pre>
+
+<pre class="code-container__element" id="flex-wrap">
+<span class="code-container__element-param">flex-wrap:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-wrap: nowrap;">nowrap</a>
+           <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-wrap: wrap;">wrap</a>
+           <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-wrap: wrap-reverse;">wrap-reverse</a>
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">justify-content:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="justify-content: flex-start;">flex-start</a>
+                 <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="justify-content: flex-end;">flex-end</a>
+                 <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="justify-content: center;">center</a>
+                 <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="justify-content: space-between;">space-between</a>
+                 <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="justify-content: space-around;">space-around</a>
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">align-items:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: flex-start;">flex-start</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: flex-end;">flex-end</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: center;">center</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: baseline;">baseline</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: stretch;">stretch</a>
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">align-content:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: flex-start;">flex-start</a>
+               <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: flex-end;">flex-end</a>
+               <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: center;">center</a>
+               <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: space-between;">space-between</a>
+               <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: space-around;">space-around</a>
+               <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-content: stretch;">stretch</a>
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">flex-flow:</span> <a href="#flex-direction" class="code-container__element-value" data-clipboard-text="flex-flow: row nowrap;">&lt;flex-direction&gt;</a> <a href="#flex-wrap" class="code-container__element-value" data-clipboard-text="flex-flow: row nowrap;">&lt;flex-wrap&gt;</a>
+</pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="flexbox-container">
+		<div class="flexbox-container__inner">
+			<h2 class="flexbox-container__title">Children Flex-container</h2>
+			<div class="code-container">
+<pre class="code-container__element">
+<span class="code-container__element-param">order:</span> <input type="number" value="0" min="0" id="flex-order" class="code-container__element-value">
+</pre>
+
+<pre class="code-container__element" id="flex-grow">
+<span class="code-container__element-param">flex-grow:</span> <input type="number" value="0" min="0" id="flex-grow" class="code-container__element-value">
+</pre>
+
+<pre class="code-container__element" id="flex-shrink">
+<span class="code-container__element-param">flex-shrink:</span> <input type="number" value="1" min="0" id="flex-shrink" class="code-container__element-value">
+</pre>
+
+<pre class="code-container__element" id="flex-basis">
+<span class="code-container__element-param">flex-basis:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="flex-basis: auto;">auto</a>
+            <input type="number" value="0" min="0" id="flex-basis" class="code-container__element-value">
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">flex:</span> <a href="#flex-grow" class="code-container__element-value" data-clipboard-text="flex: 0 1 auto;">&lt;flex-grow&gt;</a> <a href="#flex-shrink" class="code-container__element-value" data-clipboard-text="flex: 0 1 auto;">&lt;flex-shrink&gt;</a> <a href="#flex-basis" class="code-container__element-value" data-clipboard-text="flex: 0 1 auto;">&lt;flex-basis&gt;</a>
+</pre>
+
+<pre class="code-container__element">
+<span class="code-container__element-param">align-items:</span> <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: auto;">auto</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: flex-start;">flex-start</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: flex-end;">flex-end</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: center;">center</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: baseline;">baseline</a>
+             <a href="javascript:void(0);" class="code-container__element-value" data-clipboard-text="align-items: stretch;">stretch</a>
+</pre>
+			</div>
+		</div>
+	</section>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

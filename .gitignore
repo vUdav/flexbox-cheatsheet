@@ -1,9 +1,3 @@
-build/fonts
-build/css
-build/img
-build/js
-build/*.html
-
 .Saved/
 _arc/
 bower_components/
