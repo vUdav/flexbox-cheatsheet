@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 	// copy to clipboard property and value then click on value
-	var clipboard = new Clipboard('.code-container__element--value');
+	var clipboard = new Clipboard('.code-container__element-value');
 	clipboard.on('success', function(e) {
 		$('#copy-notify').html('<strong>'+e.text+'</strong><br>is copied!');
 		$('#copy-notify').addClass('copy-notify--success');
