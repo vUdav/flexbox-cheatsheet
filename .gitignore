@@ -12,3 +12,9 @@ node_modules/
 css/*.css
 ex_files
 Thumbs.db
+.grunt/
+build/fonts
+build/css
+build/img
+build/js
+build/*.html

@@ -157,6 +157,8 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'js',
+    'includereplace:html',
     'style',
     'gh-pages',
   ]);
