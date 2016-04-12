@@ -13,6 +13,10 @@ function pulseBlock() {
 
 // copy to clipboard property and value then click on value
 function copy() {
+	$('.code-container__element-value').on('click',function(e){
+		e.preventDefault();
+	});
+
 	var clipboard = new Clipboard('.code-container__element-value');
 	clipboard.on('success', function(e) {
 		$('#copy-notify').html('<strong>'+e.text+'</strong><br>is copied!');
