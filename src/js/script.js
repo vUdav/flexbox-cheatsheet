@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	pulseBlock();
 	copy();
+	inputClipboardDataChange();
 });
 
 // pulse code block then hover on value shorthand properties
@@ -23,5 +24,15 @@ function copy() {
 		$('#copy-notify').addClass('copy-notify--success');
 		setTimeout(function(){$('#copy-notify').removeClass('copy-notify--success')}, 3000);
 		e.clearSelection();
+	});
+}
+
+// change input data-clipboard-text
+function inputClipboardDataChange() {
+	$('input.code-container__element-value').on('change',function(){
+		var id = $(this).attr('id');
+		var value = $(this).val();
+		var clipboardText = id+': '+value+';';
+		$(this).attr('data-clipboard-text',clipboardText);
 	});
 }
