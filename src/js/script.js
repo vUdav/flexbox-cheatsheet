@@ -1,11 +1,18 @@
 $(document).ready(function() {
-	// pulse code block then hover on value shorthand properties
+	pulseBlock();
+	copy();
+});
+
+// pulse code block then hover on value shorthand properties
+function pulseBlock() {
 	$('.code-container__element a').hover(function(){
 		var propertyId = $(this).attr('href');
 		$(propertyId).toggleClass('code-container__element--pulse');
 	});
+}
 
-	// copy to clipboard property and value then click on value
+// copy to clipboard property and value then click on value
+function copy() {
 	var clipboard = new Clipboard('.code-container__element-value');
 	clipboard.on('success', function(e) {
 		$('#copy-notify').html('<strong>'+e.text+'</strong><br>is copied!');
@@ -13,4 +20,4 @@ $(document).ready(function() {
 		setTimeout(function(){$('#copy-notify').removeClass('copy-notify--success')}, 3000);
 		e.clearSelection();
 	});
-});
+}
