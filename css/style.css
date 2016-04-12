@@ -543,13 +543,21 @@ body h2 {
 	position: fixed;
 	top: 15px;
 	right: 15px;
+	height: 330px;
+	overflow: hidden;
+}
+
+.copy-notify__block {
 	border-radius: 3px;
 	border: 3px solid;
 	padding: 5px;
 	opacity: 0;
+	margin-bottom: 10px;
+	padding: 6px 10px;
+	width: auto;
 }
 
-.copy-notify--success {
+.copy-notify__block--success {
 	background-color: #90C695;
 	border-color: #519f59;
 	color: #2f5b33;
