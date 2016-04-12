@@ -13,3 +13,4 @@ css/*.css
 ex_files
 Thumbs.db
 .grunt/
+build/
