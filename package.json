@@ -1,21 +1,21 @@
 {
-  "name": "project",
+  "name": "FlexboxCheatsheet",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "^6.1.0",
-    "grunt": "^0.4.5",
-    "grunt-browser-sync": "^2.0.0",
-    "grunt-combine-media-queries": "^1.0.19",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-less": "^1.1.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-gh-pages": "^1.0.0",
-    "grunt-include-replace": "^3.2.0",
-    "grunt-postcss": "^0.7.1",
-    "load-grunt-tasks": "^3.3.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-uglify": "^0.11.0"
+    "autoprefixer": "latest",
+    "grunt": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-combine-media-queries": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-gh-pages": "latest",
+    "grunt-include-replace": "latest",
+    "grunt-postcss": "latest",
+    "load-grunt-tasks": "latest"
   }
 }
