@@ -485,16 +485,12 @@ body h2 {
 }
 
 .code-container {
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-align-items: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
-	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 }
@@ -514,11 +510,8 @@ body h2 {
 }
 
 .code-container__element--pulse {
-	-webkit-animation-name: 'codepulse';
 	animation-name: 'codepulse';
-	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
-	-webkit-animation-iteration-count: 2;
 	animation-iteration-count: 2;
 }
 
@@ -561,9 +554,7 @@ body h2 {
 	background-color: #90C695;
 	border-color: #519f59;
 	color: #2f5b33;
-	-webkit-animation-name: 'notifyshow';
 	animation-name: 'notifyshow';
-	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 }
 
@@ -571,18 +562,6 @@ body h2 {
 
 .code-container__element {
 	min-width: 260px;
-}
-
-}
-
-@-webkit-keyframes codepulse {
-
-0%,100% {
-	background-color: #272822;
-}
-
-50% {
-	background-color: #4f5145;
 }
 
 }
@@ -595,18 +574,6 @@ body h2 {
 
 50% {
 	background-color: #4f5145;
-}
-
-}
-
-@-webkit-keyframes notifyshow {
-
-0%,100% {
-	opacity: 0;
-}
-
-10%,90% {
-	opacity: 1;
 }
 
 }
