@@ -210,6 +210,7 @@ figure {
  */
 
 hr {
+	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 	height: 0;
 }
@@ -333,6 +334,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
 }
@@ -355,6 +357,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
 	-webkit-appearance: textfield; /* 1 */
+	-webkit-box-sizing: content-box;
 	box-sizing: content-box; /* 2 */
 }
 
@@ -426,6 +429,7 @@ th {
 *,
 *:after,
 *:before {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -485,12 +489,15 @@ body h2 {
 }
 
 .code-container {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
+	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 }
@@ -501,17 +508,25 @@ body h2 {
 	padding: 15px;
 	color: #fff;
 	border-radius: 3px;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	-webkit-transition: -webkit-box-shadow 0.25s;
+	transition: -webkit-box-shadow 0.25s;
 	transition: box-shadow 0.25s;
+	transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
 }
 
 .code-container__element:hover {
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .code-container__element--pulse {
+	-webkit-animation-name: 'codepulse';
 	animation-name: 'codepulse';
+	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
+	-webkit-animation-iteration-count: 2;
 	animation-iteration-count: 2;
 }
 
@@ -554,7 +569,9 @@ body h2 {
 	background-color: #90C695;
 	border-color: #519f59;
 	color: #2f5b33;
+	-webkit-animation-name: 'notifyshow';
 	animation-name: 'notifyshow';
+	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
 }
 
@@ -562,6 +579,18 @@ body h2 {
 
 .code-container__element {
 	min-width: 260px;
+}
+
+}
+
+@-webkit-keyframes codepulse {
+
+0%,100% {
+	background-color: #272822;
+}
+
+50% {
+	background-color: #4f5145;
 }
 
 }
@@ -574,6 +603,18 @@ body h2 {
 
 50% {
 	background-color: #4f5145;
+}
+
+}
+
+@-webkit-keyframes notifyshow {
+
+0%,100% {
+	opacity: 0;
+}
+
+10%,90% {
+	opacity: 1;
 }
 
 }
